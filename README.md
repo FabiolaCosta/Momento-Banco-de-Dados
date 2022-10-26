@@ -53,7 +53,7 @@ Resposta: A média é de 5633.33
 
 ##
 
-**6. Quanto o departamento de Transportes gasta em salários?**
+**🔹6. Quanto o departamento de Transportes gasta em salários?**
 
 Resposta: Eles gastam R$41200.00
 
@@ -61,19 +61,19 @@ Resposta: Eles gastam R$41200.00
 
 ##
 
-**7. Um novo departamento foi criado. O departamento de inovações. Ele será locado no Brasil. Por favor, adicione-o no banco de dados.**
+**🔹7. Um novo departamento foi criado. O departamento de inovações. Ele será locado no Brasil. Por favor, adicione-o no banco de dados.**
 
 >insert into departamento value (12, 'Inovação', '5400'); 
 
 ##
 
-**8. Novos Funcionários!
+**🔹8. Novos Funcionários!**
 Três novos funcionários foram contratados para o departamento de inovações. Por favor, adicione-os: William Ferreira, casado com Inara Ferreira, possui um filho chamado Gabriel que tem 4 anos e adora brincar com cachorros. Ele será programador.Já a Fernanda Lima, que é casada com o Rodrigo, não possui filhos. Ela vai ocupar a posição de desenvolvedora.  Por último, a Gerente do departamento será Fabiana Raulino. Casada, duas filhas (Maya e Laura). 
 O salário de todos eles será a média salarial dos departamentos de administração e finanças.**
 
 ##
 
-**9. Informe todas as regiões em que a empresa atua acompanhadas de seus países.**
+**🔹9. Informe todas as regiões em que a empresa atua acompanhadas de seus países.**
 
 >select paises.pais_name, regiao.regiao_name from paises 
 inner join regiao
@@ -81,14 +81,14 @@ on paises.regiao_id = regiao.regiao_id
 
 ##
 
-**10. Joe Sciarra é filho de quem?**
+**🔹10. Joe Sciarra é filho de quem?**
 
 Resposta: Ismael
 >select funcionarios.primeiro_nome from dependentes inner join funcionarios on dependentes.funcionario_id = funcionarios.funcionario_id where dependentes.primeiro_nome like'%Joe%' and dependentes.sobrenome like '%Sciarra%';
 
 ##
 
-**11. Jose Manuel possui filhos?**
+**🔹11. Jose Manuel possui filhos?**
 
 Resposta: Sim, ele se chama Christian.
 
@@ -96,7 +96,7 @@ Resposta: Sim, ele se chama Christian.
 
 ##
 
-**12. Qual região possui mais países?**
+**🔹12. Qual região possui mais países?**
 
 Resposta: A Europa.
 
@@ -105,13 +105,13 @@ Resposta: A Europa.
 ##
 
 
-**13. Exiba o nome de cada funcionário acompanhado de seus dependentes.**
+**🔹13. Exiba o nome de cada funcionário acompanhado de seus dependentes.**
 
 >select funcionarios.primeiro_nome, dependentes.primeiro_nome, dependentes.sobrenome, dependentes.parentesco from funcionarios inner join dependentes on funcionarios.funcionario_id = dependentes.funcionario_id order by funcionarios.primeiro_nome;
 
 ##
 
-**14. Karen Partners possui um cônjuge?**
+**🔹14. Karen Partners possui um cônjuge?**
 
 Resposta: Não.
 
@@ -119,15 +119,15 @@ Resposta: Não.
 
 ##
 
-**15. O ID da tabela de países não segue um padrão numérico. Na sua visão, qual o impacto disso no desenvolvimento do banco?**
+**🔹15. O ID da tabela de países não segue um padrão numérico. Na sua visão, qual o impacto disso no desenvolvimento do banco?**
 
 ##
 
-**16. Escolha um país para se mudar. Qual seria esse país? Por que escolheria esse país? E o departamento. O que seria? Como seriam seus funcionários?**
+**🔹16. Escolha um país para se mudar. Qual seria esse país? Por que escolheria esse país? E o departamento. O que seria? Como seriam seus funcionários?**
 
 ##
 
-**17. Atualize as informações na tabela para que seu departamento seja criado.**
+**🔹17. Atualize as informações na tabela para que seu departamento seja criado.**
 
 
 
