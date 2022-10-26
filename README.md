@@ -71,6 +71,28 @@ Resposta: Eles gastam R$41200.00
 Três novos funcionários foram contratados para o departamento de inovações. Por favor, adicione-os: William Ferreira, casado com Inara Ferreira, possui um filho chamado Gabriel que tem 4 anos e adora brincar com cachorros. Ele será programador.Já a Fernanda Lima, que é casada com o Rodrigo, não possui filhos. Ela vai ocupar a posição de desenvolvedora.  Por último, a Gerente do departamento será Fabiana Raulino. Casada, duas filhas (Maya e Laura). 
 O salário de todos eles será a média salarial dos departamentos de administração e finanças.**
 
+>select avg(salario) from funcionarios where departamento_id = 1 or departamento_id = 10;
+
+>insert into funcionarios values(216, 'William', 'Ferreira', 'william.ferreira@gmail.com', '980.065.748', '2002-10-25', '9', '8600.00', '101', '1');
+
+>insert into dependentes values(34, 'Inara', 'Ferreira', 'Cônjuge', 216);
+
+>insert into dependentes values(35, 'Gabriel', 'Ferreira', 'Filho(o)', 216);
+
+>insert into funcionarios values(217, 'Fernanda', 'Lima', 'fernanda.lima@gmail.com', '987.789.554', '2002-10-25', '17', '8600.00', '101', '1');
+
+>insert into dependentes values(36, 'Rodrigo', 'Lima', 'Cônjuge', 217);
+
+>insert into ocupacoes values(20, 'Gerente de Departamento', '4000.00', '8000.00');
+
+>insert into funcionarios values(218, 'Fabiana', 'Raulino', 'fabiana.raulino@gmail.com', '905.740.889', '2002-10-25', '20', '8600.00', '104', '12');
+
+>insert into dependentes values(37, 'Jorge', 'Raulino', 'Cônjuge', 218);
+
+>insert into dependentes values(38, 'Laura', 'Raulino', 'Filho(a)', 218);
+
+>insert into dependentes values(39, 'Maya', 'Raulino', 'Filho(a)', 218);
+
 ##
 
 **🔹9. Informe todas as regiões em que a empresa atua acompanhadas de seus países.**
